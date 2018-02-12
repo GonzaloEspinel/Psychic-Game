@@ -1,47 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+	<title>Week 3 - Psychic Game</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="My Psychic Game">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <title>My Psychic Game</title>
+
+	<!-- set up style sheets -->
+	<!-- reset not needed because using bootstrap -->
+	<!-- <link rel="stylesheet" type="text/css" href="/assets/css/reset.css"> -->
+	<!-- Link in locally stored min version of bootstrap.css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- Make final css adjustments with personal stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
- <img src="accets/images/psychic.jpg" class="img-fluid" alt="Responsive image">
+<body>
+	<!-- This is what will be displayed on screen to begin -->
+	<div class="jumbotron">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<img src="assets/images/psychic.jpg" class="img-responsive" alt="psychic">
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-6" id="game">
+					<p><h1>My Psychic Game</h1></p>
+					<p><h3>Guess what letter I'm thinking of</h3></p>
+					<p><h3>Wins: 0</h3></p>
+					<p><h3>Losses: 0</h3></p>
+					<p><h3>Guesses Left: 9</h3></p>
+					<p><h3>Your guesses so far: </h3></p>
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+	</div>
+	
+	<!-- Link to javascript game.js -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
-    <h1 a class="display-1">My Psychic Game</h1>
-       
-    <dl class="row">
-        <dt class="col-sm-3">Guess What Letter I'm thinking of?</dt>
-        <dd class="col-sm-9">Please, Type a letter.</dd>
-
-        <dt class="col-sm-3">Wins:</dt>
-        <dd class="col-sm-9">Number of Wins</dd>
-
-        <dt class="col-sm-3">Losses:</dt>
-        <dd class="col-sm-9">Number of Losses</dd>
-
-        <dt class="col-sm-3 text-truncate">Guesses Left:</dt>
-        <dd class="col-sm-9">Number of Guesses Left</dd>
-
-        <dt class="col-sm-3 text-truncate">You have guessed so far: </dt>
-        <dd class="col-sm-9">Number of Times you have Guessed</dd>
-
-        </dl>
-
-
-
-<script type="text/javascript"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
 </body>
-
-
-
 
 </html>
